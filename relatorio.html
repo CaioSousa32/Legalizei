@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" type="text/css" href="css/relatorio_style.css">
+<title>Legalizei</title>
+<style>
+  
+</style>
+</head>
+<body>
+  <header>
+    <img class="logo" src="370311677_621109556675675_1229128229140011257_n.png" alt="Logo do Legalizei">
+    <h1>Legalizei</h1>
+  </header>
+  <nav>
+    <a href="index.html">Cadastro</a>
+    <a href="sobrenos.html">Sobre Nós</a>
+    <a href="CNPJ.html">CNPJ</a>
+    <a href="entrar.html"><i class="bi bi-person-fill"></i> Entrar</a>
+  </nav>
+  <section>
+    <div class="container">
+      <h1>Relatório do Restaurante</h1>
+      <form id="reportForm">
+        <label>1. Possui Inspeção da Vigilância Sanitária?</label>
+        <input type="radio" id="vigilanceYes" name="vigilance" value="yes">
+        <label for="vigilanceYes">Sim</label>
+        <input type="radio" id="vigilanceNo" name="vigilance" value="no">
+        <label for="vigilanceNo">Não</label>
+
+        <label>2. Possui Licença de Funcionamento?</label>
+        <input type="radio" id="licenseYes" name="license" value="yes">
+        <label for="licenseYes">Sim</label>
+        <input type="radio" id="licenseNo" name="license" value="no">
+        <label for="licenseNo">Não</label>
+
+        <!-- Mais perguntas de sim ou não aqui... -->
+
+        <button type="submit">Gerar Relatório</button>
+      </form>
+    </div>
+  </section>
+
+  <section id="report">
+    <div class="container">
+      <h2>Relatório do Restaurante</h2>
+      <div id="reportContent">
+        <!-- O relatório gerado será exibido aqui dinamicamente -->
+      </div>
+    </div>
+  </section>
+
+  <script>
+    const reportForm = document.getElementById('reportForm');
+    const reportContent = document.getElementById('reportContent');
+
+    reportForm.addEventListener('submit', function(event) {
+      event.preventDefault();
+
+      // Processar respostas do formulário e gerar relatório
+      const vigilanceValue = reportForm.elements.vigilance.value;
+      const licenseValue = reportForm.elements.license.value;
+
+      // Lógica para gerar o relatório com base nas respostas
+      const report = generateReport(vigilanceValue, licenseValue);
+
+      // Exibir o relatório na página
+      reportContent.innerHTML = report;
+    });
+
+    // Função de exemplo para gerar o relatório
+    function generateReport(vigilanceValue, licenseValue) {
+      let report = '<p><strong>Relatório do Restaurante:</strong></p>';
+
+      report += `<p>Vigilância Sanitária: ${vigilanceValue === 'yes' ? 'Regular' : 'Pendente'}</p>`;
+      if (vigilanceValue === 'no') {
+        report += '<p>Recomendações para resolver problemas de vigilância sanitária...</p>';
+      }
+
+      report += `<p>Licença de Funcionamento: ${licenseValue === 'yes' ? 'Regular' : 'Pendente'}</p>`;
+      if (licenseValue === 'no') {
+        report += '<p>Recomendações para obter a licença de funcionamento...</p>';
+      }
+
+      // Mais informações e recomendações podem ser adicionadas aqui...
+
+      return report;
+    }
+  </script>
+</body>
+</html>

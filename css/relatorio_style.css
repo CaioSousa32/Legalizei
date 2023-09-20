@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #021F59;
+    color: #FFFFFF;
+  }
+
+  header {
+    background-color: #056CF2;
+    padding: 20px 0;
+    text-align: center;
+  }
+
+  header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+
+  .logo {
+    max-width: 100px;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  nav {
+    background-color: #0583F2;
+    padding: 10px 0;
+    text-align: center;
+  }
+
+  nav a {
+    color: #FFFFFF;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 18px;
+  }
+
+  section {
+    background-color: #C9F2EE;
+    padding: 20px 0;
+    text-align: center;
+  }
+
+  section h1 {
+    color: #056CF2;
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+
+  form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+
+  input[type="radio"] {
+    margin-right: 5px;
+  }
+
+  button {
+    background-color: #056CF2;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 18px;
+  }
+
+  button:hover {
+    background-color: #0583F2;
+  }

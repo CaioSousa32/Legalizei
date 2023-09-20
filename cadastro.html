@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+<link rel="stylesheet" href="css/cadastro_style.css">
+
+<title>Legalizei</title>
+<style>
+
+</style>
+</head>
+<body>
+  <header>
+    <img class="logo" src="370311677_621109556675675_1229128229140011257_n.png" alt="Logo do Legalizei">
+   
+    <h1>Legalizei</h1>
+  </header>
+  <nav>
+    <a href="index.html">Cadastro</a>
+    <a href="sobrenos.html">Sobre</a>
+    <a href="CNPJ.html">CNPJ</a>
+    <div><a href="entrar.html"><i class="bi bi-person-fill"></i>Entrar</a></div>
+  </nav>
+  
+  <section id="cadastro">
+    <h2>Cadastro</h2>
+    <form id="registrationForm">
+      <label for="name">Nome:</label>
+      <input type="text" id="name" name="name" required>
+      
+      <label for="email">Email:</label>
+      <input type="text" id="email" name="email" required>
+      
+      <label for="password">Senha:</label>
+      <input type="password" id="password" name="password" required>
+      
+      <button type="submit">Cadastrar</button>
+    </form>
+    <div class="social-login">
+      <a href="https://www.facebook.com/campaign/landing.php?&campaign_id=1661784632&extra_1=s%7Cc%7C320269324047%7Ce%7Cfacebook%7C&placement=&creative=320269324047&keyword=facebook&partner_id=googlesem&extra_2=campaignid%3D1661784632%26adgroupid%3D63686352403%26matchtype%3De%26network%3Dg%26source%3Dnotmobile%26search_or_content%3Ds%26device%3Dc%26devicemodel%3D%26adposition%3D%26target%3D%26targetid%3Dkwd-541132862%26loc_physical_ms%3D1001625%26loc_interest_ms%3D%26feeditemid%3D%26param1%3D%26param2%3D&gclid=EAIaIQobChMI47qesKaEgQMVAT-RCh0-aAnZEAAYASAAEgKpw_D_BwE"><i class="bi bi-facebook"></i> Cadastrar com Facebook</a>
+      <a href="https://br.linkedin.com/?src=go-pa&trk=sem-ga_campid.12619604099_asid.148548608796_crid.656532769092_kw.linked_d.c_tid.kwd-103941963_n.g_mt.e_geo.1001625&mcid=6821526239111716925&cid=&gclid=EAIaIQobChMIjLq32aaEgQMVFemRCh2HsQ-_EAAYASAAEgIfVPD_BwE&gclsrc=aw.ds"><i class="bi bi-linkedin"></i> Cadastrar com LinkedIn</a>
+      <a href="https://accounts.google.com/login?hl=pt-br"><i class="bi bi-google"></i> Cadastrar com Google</a>
+    </div>
+  </section>
+  
+
+  <!-- Seções "Sobre", "CNPJ" e "Entrar" podem ser adicionadas aqui -->
+
+  <script>
+    function redirectToConfirmation() {
+      // Redirecionar para a página "confirmarentrar.html"
+      window.location.href = "cadastrarentrar.html";
+    }
+
+    const registrationForm = document.getElementById('registrationForm');
+
+    registrationForm.addEventListener('submit', function(event) {
+      event.preventDefault();
+
+      // Processar o formulário de cadastro aqui
+      const name = registrationForm.elements.name.value;
+      const email = registrationForm.elements.email.value;
+      const password = registrationForm.elements.password.value;
+
+      // Lógica para processar o cadastro
+      // ...
+
+      // Redirecionar para a página "confirmarentrar.html"
+      redirectToConfirmation();
+    });
+  </script>
+</body>
+</html>

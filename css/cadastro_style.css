@@ -1,0 +1,62 @@
+.logo {
+    display: inline-block;
+    width: 120px; /* Ajuste o tamanho do logotipo conforme necessário */
+    height: auto;}
+
+  body {
+    font-family: Arial, sans-serif;
+    margin: center;
+    padding: 0;
+    background-color: #f7f7f7;
+  }
+  header {
+    background-color: #34495e;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+  }
+  nav {
+    background-color: #ecf0f1;
+    padding: 10px;
+    text-align: center;
+  }
+  nav a {
+    color: #333;
+    text-decoration: none;
+    margin: 0 15px;
+  }
+  section {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  h1 {
+    color: #3498db;
+  }
+  label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+    font-weight: bold;
+  }
+  input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  button {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  button:hover {
+    background-color: #2980b9;
+  }
