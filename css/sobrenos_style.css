@@ -1,7 +1,4 @@
-.logo {
-    display: inline-block;
-    width: 120px; /* Ajuste o tamanho do logotipo conforme necessário */
-    height: auto;}
+
 
   body {
     font-family: Arial, sans-serif;
@@ -62,6 +59,49 @@
   }
 
   .contact-button {
+    display: inline-block;
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out;
+  }
+
+  .contact-button:hover {
+    background-color: #2980b9;
+  }
+  .logo {
+    display: inline-block;
+    width: 80px; /* Ajuste o tamanho do logotipo conforme necessário */
+    height: auto;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+    color: #333;
+  }
+
+  header {
+    background-color: #056CF2;
+    padding: 20px 0;
+    text-align: center;
+  }
+
+  header h1 {
+    font-size: 36px;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+  }
+
+  .contact-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
     display: inline-block;
     background-color: #3498db;
     color: white;
