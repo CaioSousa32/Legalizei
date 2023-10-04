@@ -15,24 +15,25 @@
 </head>
 <body>
   <header>
-    <a class="contact-button" href="https://api.whatsapp.com/send?phone=81986678850" target="_blank">Fale Conosco</a>
     <img class="logo" src="imagem/logo.png" alt="Logo do Legalizei">
     <h1>Legalizei</h1>
   </header>
-  <nav>
-    <a href="index.html"></a>
-    <a href="menu.html">Menu</a>
-    <a href="entrar.html"><i class="bi bi-person-fill"></i> Cadastrar/Entrar</a>
-    <a href="CNPJ.html">CNPJ</a>
-    <a href="sobrenos.html">Sobre</a>
-  </nav>
   <section id="cadastro">
-    <h2>Cadastro</h2>
+    <center><h2>Cadastro</h2></center>
     <form id="registrationForm">
       <label for="name">Nome:</label>
       <input type="text" id="name" name="name" required>
       
+      <label for="cpf">CPF:</label>
+      <input type="text" id="cpf" name="cpf" required>
+      
       <label for="email">Email:</label>
+      <input type="text" id="email" name="email" required>
+      
+      <label for="email">Telefone:</label>
+      <input type="text" id="email" name="email" required>
+      
+      <label for="email">Data de nascimente:</label>
       <input type="text" id="email" name="email" required>
       
       <label for="password">Senha:</label>
@@ -40,13 +41,18 @@
       <label for="password">Confirmar Senha:</label>
       <input type="password" id="password" name="password" required>
       
-      <button type="submit">Cadastrar</button>
+      <label for="remember-password">
+        <input type="checkbox" id="remember-password" name="remember-password">
+        Eu li e concordo com os termos de uso.
+      </label>
+
+      <label for="remember-password">
+        <input type="checkbox" id="remember-password" name="remember-password">
+        Aceito receber informações semanais por email.
+      </label>
+
+      <center><button type="submit">Cadastrar</button></center>
     </form>
-    <div class="social-login">
-      <a href="https://www.facebook.com/campaign/landing.php?&campaign_id=1661784632&extra_1=s%7Cc%7C320269324047%7Ce%7Cfacebook%7C&placement=&creative=320269324047&keyword=facebook&partner_id=googlesem&extra_2=campaignid%3D1661784632%26adgroupid%3D63686352403%26matchtype%3De%26network%3Dg%26source%3Dnotmobile%26search_or_content%3Ds%26device%3Dc%26devicemodel%3D%26adposition%3D%26target%3D%26targetid%3Dkwd-541132862%26loc_physical_ms%3D1001625%26loc_interest_ms%3D%26feeditemid%3D%26param1%3D%26param2%3D&gclid=EAIaIQobChMI47qesKaEgQMVAT-RCh0-aAnZEAAYASAAEgKpw_D_BwE"><i class="bi bi-facebook"></i> Cadastrar com Facebook</a>
-      <a href="https://br.linkedin.com/?src=go-pa&trk=sem-ga_campid.12619604099_asid.148548608796_crid.656532769092_kw.linked_d.c_tid.kwd-103941963_n.g_mt.e_geo.1001625&mcid=6821526239111716925&cid=&gclid=EAIaIQobChMIjLq32aaEgQMVFemRCh2HsQ-_EAAYASAAEgIfVPD_BwE&gclsrc=aw.ds"><i class="bi bi-linkedin"></i> Cadastrar com LinkedIn</a>
-      <a href="https://accounts.google.com/login?hl=pt-br"><i class="bi bi-google"></i> Cadastrar com Google</a>
-    </div>
   </section>
   
 
