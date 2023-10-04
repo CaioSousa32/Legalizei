@@ -132,3 +132,40 @@ margin-bottom: 15px;
     text-decoration: none;
     transition: background-color 0.3s ease-in-out;
   }
+/* Estilo para os botões de entrada social */
+.social-button {
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 10px;
+  padding: 10px 0;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  cursor: pointer;
+}
+
+.google {
+  background-color: #da2c19; /* Cor do Google */
+}
+
+.facebook {
+  background-color: #1877F2; /* Cor do Facebook */
+}
+
+.linkedin {
+  background-color: #3085b3; /* Cor do LinkedIn */
+}
+
+/* Estilo para o ícone */
+.social-button i {
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+/* Estilo ao passar o mouse sobre os botões */
+.social-button:hover {
+  opacity: 0.8;
+}
