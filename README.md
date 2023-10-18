@@ -18,6 +18,9 @@ Na terceira tela, vai aparecer as opções de consultar cnpj, consultar licença
 **##Funcionalidade 4 (tela 4)**
 Na quarta página, vai ter uma funcionalidade juntamente com a página das licenças, onde se o nosso cliente ja tiver feitos todos os procedimentos pra ter sua empresa legal perante o governo, ele vai obter o selo de microempreendedor licenciado legalmente.
 
+**### Layout da aplicação**
+
+
 **### pré-requisitos**
 
 Linguagem de Programação: HTML e Java Script;
@@ -27,6 +30,8 @@ Sistema de gerenciamento; MySQL para se conectar ao banco de Dados;
 Licenças e chaves de API:  Bootstrap pra conseguir ícones e deixar o site acessível pra smartphones.
 
 **### Como rodar a aplicação**
+
+
 
 
 
